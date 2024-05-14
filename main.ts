@@ -1,3 +1,12 @@
+input.onButtonPressed(Button.A, function () {
+    ThresholdTemp = ThresholdTemp + 1
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showString("" + (ThresholdTemp))
+})
+input.onButtonPressed(Button.B, function () {
+    ThresholdTemp = ThresholdTemp - 1
+})
 let ThresholdTemp = 0
 ThresholdTemp += 37
 basic.forever(function () {
